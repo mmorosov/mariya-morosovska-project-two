@@ -10,38 +10,89 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#reserve">Reserve</a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="#">search icon</a>
-                </li>
-                <li>
-                    <a href="#">shopping bag icon</a>
-                    <p>2</p>
-                </li>
-            </ul>
-        </nav>
-        <p class="logo">Sunshine</p>
-        <h1 class="sr-only">Sunshine Contact</h1>
+        <div class="topBar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#reserve">Reserve</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">search icon</a>
+                    </li>
+                    <li>
+                        <a href="#">shopping bag icon</a>
+                        <p>2</p>
+                    </li>
+                </ul>
+            </nav>
+            <p class="logo">Sunshine</p>
+        </div>
+        <h1 class="sr-only">Contact Us</h1>
     </header>
 
     <main>
-        
+        <section>
+            <div class="copy">
+                <h2>Contact Details</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ab facilis et rerum sit necessitatibus modi nulla aliquam recusandae tempora.</p>
+            </div>
+            <ul>
+                <li>
+                    <i></i>
+                    <h3>Phone</h3>
+                    <p>Phone 01: +999 123-456-7890</p>
+                    <p>Phone 01: +999 123-456-7890</p>
+                </li>
+                <li>
+                    <i></i>
+                    <h3>Address</h3>
+                    <p>135 John Street, Apt. 2039, 4th floor Big Building, Honolulu, Hawaii</p>
+                </li>
+                <li>
+                    <i></i>
+                    <h3>Email</h3>
+                    <p>email1@mysite.ca</p>
+                    <p>email2@mysite.ca</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="copy">
+                <h2>Get In Touch With Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eveniet?</p>
+            </div>
+            <form>
+                <fieldset>
+                    <label class="sr-only" for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+                    <label class="sr-only" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="youremail@domain.com" required>
+
+                    <label class="sr-only" for="subject"></label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject (Optional">
+                </fieldset>
+                <label class="sr-only" for="message"></label>
+                <input type="text" name="message" id="message" placeholder="Here goes your message:" required>
+                <input type="submit" placeholder="Send Message">
+            </form>
+        </section>
+        <section>
+            <img src="sunshine-assets/contact-2.jpeg" alt="Front view of a boardwalk going from the sea into the beach">           
+        </section>
     </main>
 
     <footer>
