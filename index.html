@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sunshine Home</title>
+    <title>Sunshine Blog</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f979e9e367.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* 
+    font-family: 'Playfair Display', serif;
+
+    font-family: 'Poppins', sans-serif;
+ */
+    </style>
 </head>
+
 <body>
     <header>
         <div class="topBar">
@@ -27,10 +41,10 @@
                         <a href="contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="#">search icon</a>
+                        <a href="#"><i class="fas fa-search"></i></a>
                     </li>
                     <li>
-                        <a href="#">shopping bag icon</a>
+                        <a href="#"><i class="fas fa-shopping-bag"></i></a>
                         <p>2</p>
                     </li>
                 </ul>
@@ -62,28 +76,28 @@
             <h2 class="sr-only">Features</h2>
             <ul class="featuresTable">
                 <li>
-                    <i></i>
+                    <i class="fas fa-sun"></i>
                     <div class="copy">
                         <h3>Sunny Season</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit asperiores beatae hic, cupiditate voluptatibus nemo! Eos ex dignissimos officiis.</p>
                     </div>
                 </li>
                 <li>
-                    <i></i>
+                    <i class="fas fa-utensils"></i>
                     <div class="copy">
                         <h3>Five Star Restaurants</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit asperiores beatae hic, cupiditate voluptatibus nemo! Eos ex dignissimos officiis.</p>
                     </div>
                 </li>
                 <li>
-                    <i></i>
+                    <i class="fas fa-plane"></i>
                     <div class="copy">
                         <h3>Flight Included</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit asperiores beatae hic, cupiditate voluptatibus nemo! Eos ex dignissimos officiis.</p>
                     </div>
                 </li>
                 <li>
-                    <i></i>
+                    <i class="fas fa-glass-martini"></i>
                     <div class="copy">
                         <h3>All Inclusive</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit
@@ -91,7 +105,7 @@
                     </div>
                 </li>
                 <li>
-                    <i></i>
+                    <i class="fas fa-leaf"></i>
                     <div class="copy">
                         <h3>Guided Nature Excursions</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit
@@ -99,7 +113,7 @@
                     </div>
                 </li>
                 <li>
-                    <i></i>
+                    <i class="fas fa-bell"></i>
                     <div class="copy">
                         <h3>Wake Up Service</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit
@@ -113,14 +127,27 @@
         </section>
 
         <section class="testimonials">
-            <h2>Testimonials</h2>
-            <h3>What Clients Say</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate ipsam expedita facilis aliquam et quidem, excepturi, fugit totam nemo, illo beatae accusamus incidunt eius minima animi nostrum libero quos!</p>
-            <p>rating</p>
-            <div class="byline">
-                <p class="author">Ethan Hunt</p>
-                <p class="title">Director at Monalisa</p>
-            </div>            
+            <article class="testimonialBox">
+                <h2>Testimonials</h2>
+                <h3>What Clients Say</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate ipsam expedita facilis aliquam et quidem, excepturi, fugit totam nemo, illo beatae accusamus incidunt eius minima animi nostrum libero quos!</p>
+
+                <ul class="rating">
+                    <li><i class="far fa-star"></i></li>
+                    <li><i class="far fa-star"></i></li>
+                    <li><i class="far fa-star"></i></li>
+                    <li><i class="far fa-star"></i></li>
+                    <li><i class="far fa-star"></i></li>
+                </ul>
+
+                <div class="byline">
+                    <p class="author">Ethan Hunt</p>
+                    <p class="title">Director at Monalisa</p>
+                </div>
+
+                <i class="fas fa-chevron-left" alt="Previous testimonial"></i>
+                <i class="fas fa-chevron-right" alt="Next testimonial"></i>
+            </article>
         </section>
 
         <section class="gallery">
@@ -175,6 +202,21 @@
                 <input type="email" name="email" id="email" placeholder="Your Email">
             </fieldset>
         </form>
+
+        <div class="lowBar">
+            <p class="copyright">&copy; 2018 Sunshine Hotel</p>
+            <ul>
+                <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
     </footer>   
 </body>
 </html>
