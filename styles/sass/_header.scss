@@ -1,0 +1,23 @@
+
+// topBar Styling
+
+.topBar {
+    width: 100%;
+    background-color: $backgroundColor2;
+    position: relative;
+
+    ul {
+        align-items: center;
+        text-transform: uppercase;
+
+        li {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    p {
+        position: absolute;
+    }
+}

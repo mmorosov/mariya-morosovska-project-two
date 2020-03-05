@@ -1,0 +1,9 @@
+
+// Contact Page Styling
+
+.contactPage {
+    header {
+        @include headerStyle('../sunshine-assets/contact-1.jpeg');
+        min-height: 70vh;
+    }
+}

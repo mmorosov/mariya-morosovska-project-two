@@ -1,0 +1,28 @@
+
+// Color variables
+
+$primaryColor: #000000;
+$secondaryColor: #999999;
+$spanColor: #CCCCCC;
+$backgroundColor: #EDEDED;
+$backgroundColor2: #FFFFFF;
+$accentColorOne: #A4F1DC;
+$accentColorTwo: #F6AB09;
+$accentColorThree: #84A016;
+
+// Font variables
+
+$decorativeFont: 'Playfair Display', serif;
+$plainFont: 'Poppins', sans-serif;
+
+// Header Image Mixin
+// Solution looked up on Stack Overflow
+// https://stackoverflow.com/questions/5448044/sass-background-image-mixin/5448100
+
+@mixin headerStyle($imgPath) {
+    background-image: url($imgPath);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+

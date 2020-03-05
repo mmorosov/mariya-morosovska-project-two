@@ -1,0 +1,163 @@
+
+// Home Page Styling
+
+.homePage {
+
+    // Header
+
+    header {
+        @include headerStyle('../sunshine-assets/home-1.jpeg');
+    }
+
+    // About Section
+
+    .about {
+        background-color: $backgroundColor;
+
+        .wrapper {
+            display: flex;
+            flex-direction: vertical;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 100px 0;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .image {
+            width: 300px;
+            max-width: 350px;   
+            position: relative;
+
+            img:first-child {
+                width: 225px;
+                border: 10px solid $backgroundColor2;
+                margin: 0 10px;
+                float: right;
+            }
+            
+            img:last-child {
+                position: absolute;
+                width: 125px;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        .copy {
+            width: 300px;
+            padding-bottom: 20%;
+        }
+    }
+
+    // Features Section
+
+    .features {
+        background-color: $backgroundColor2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .featuresTable {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin-left: 15%;
+        padding: 10% 5% 10% 0;
+
+        li {
+            display: flex;
+            max-width: 50%;
+            padding: 0 20px 20px 0;
+        }
+    
+        h3 {
+            margin: 0;
+        }
+
+        i {
+            padding: 0 20px 0 0;
+        }
+
+    }
+
+    // Testimonials Section
+
+    .testimonials {
+        background-color: $backgroundColor;
+        text-align: center;
+        padding: 75px 0;
+
+        .testimonialBox {
+            background-color: $backgroundColor2;
+            padding: 50px 75px;
+            position: relative;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+        }
+
+        .fas {
+            position: absolute;
+            top: 50%;
+        }
+
+        .left.fas {
+            left: -50px;
+        }
+
+        .right.fas {
+            right: -50px;
+        }
+
+        .byline {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    // Gallery Section
+
+    .gallery {
+        background-color: $backgroundColor;
+        padding-bottom: 75px;        
+        text-align: center;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        li {
+            width: calc(100% / 3 - 10px);
+            padding-bottom: 10px;
+        }
+    }
+
+    // Contact Us Section
+
+    .contactUs {
+        background-color: $backgroundColor2;
+        display: flex;
+        justify-content: center;
+
+        .copy {
+            width: 40%;
+            margin-right: 15%;
+            padding: 10% 0 10% 5%;
+        }
+    }
+
+}
