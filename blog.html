@@ -46,31 +46,40 @@
     </header>
 
     <main>
-        <article>
-            <h1>Sunshine Hotel in top 5 best hotel from Tripadvisor Magazine</h1>
-            <p class="breadcrumb">
-                <a href="#">Home </a>
-                <a href="#">Blog </a>
-                Sunshine Hotel in top 5 best hotel from Tripadvisor Magazine
-            </p>
-            <ul class="articleInfo">
-                <li>
-                    <img class="authorPic" src="sunshine-assets/blog-2.jpeg" alt="Author photo">
-                    <p><span>Alex Ferguson</span></p>
-                    <p>Admin</p>
-                </li>
-                <li>
-                    <p><span>Date</span></p>
-                    <p>June 19, 2018</p>
-                </li>
-                <li>
-                    <p><span>Category</span></p>
-                    <p>Travel, lifestyle</p>
-                </li>
-                <li>
-                    <p><span>Tags</span></p>
-                    <p>Hotel, magazine, top</p>
-                </li>
+        <article class="wrapper">
+            <section class="post">
+                <h1>Sunshine Hotel in top 5 best hotel from Tripadvisor Magazine</h1>
+                <p class="breadcrumb">
+                    <a href="#">Home </a>
+                    <a href="#">Blog </a>
+                    Sunshine Hotel in top 5 best hotel from Tripadvisor Magazine
+                </p>
+                <div class="postInfo">
+                    <ul class="authorInfo">
+                        <li>
+                            <img class="authorPic" src="sunshine-assets/blog-2.jpeg" alt="Author photo">
+                        </li>
+                        <li>
+                            <p><span>Alex Ferguson</span></p>
+                            <p>Admin</p>
+                        </li>
+                    </ul>
+                    <ul class="articleInfo">
+                        <li>
+                            <p><span>Date</span></p>
+                            <p>June 19, 2018</p>
+                        </li>
+                        <li>
+                            <p><span>Category</span></p>
+                            <p>Travel, lifestyle</p>
+                        </li>
+                        <li>
+                            <p><span>Tags</span></p>
+                            <p>Hotel, magazine, top</p>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="copy">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sed eaque alias reprehenderit voluptatem ratione mollitia recusandae quis eius distinctio. Sint nostrum cumque labore culpa?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolore repellat quisquam cupiditate perspiciatis accusantium, voluptatum reprehenderit, natus dolorem voluptas harum nobis optio sunt asperiores.</p>
@@ -86,81 +95,81 @@
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
                 </ul>
-            </ul>
+            </section>
+
+            <section class="related">
+                <h2>Related Posts</h2>
+                <ul class="posts">
+                    <li>
+                        <img src="sunshine-assets/blog-3.jpeg" alt="A plane parked on water close to the beach">
+                        <div class="copy">
+                            <p class="date">Dec 31, 2019</p>
+                            <p class="title">Five Reasons to stay at a beautiful Sunshine Hotel</p>
+                            <p class="continue">Continue</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="sunshine-assets/blog-4.jpeg" alt="A woman floating on top of water">
+                        <div class="copy">
+                            <p class="date">Dec 31, 2019</p>
+                            <p class="title">Experience romantic space just have only at Sunshine Hotel</p>
+                            <p class="continue">Continue</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="sunshine-assets/blog-5.jpeg" alt="Hotel building close-up">
+                        <div class="copy">
+                            <p class="date">Dec 31, 2019</p>
+                            <p class="title">Discover activites interested in Sunshine Hotel</p>
+                            <p class="continue">Continue</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="commentSection">
+                <h2>O2 Comments</h2>
+                <ul class="comments">
+                    <li class="commentBox">
+                        <img class="commentPic" src="sunshine-assets/blog-6.jpeg" alt="Commenter photo">
+                        <div class="copy">
+                            <p class="name">Daniel Vandaft</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique nemo cumque dolorem sapiente fuga.</p>
+                            <p class="date">January 24, 2020 at 15 hours ago</p>
+                        </div>
+                    </li>
+                    <li class="commentBox">
+                        <img class="commentPic" src="sunshine-assets/blog-7.jpeg" alt="Commenter photo">
+                        <div class="copy">
+                            <p class="name">Daniel Vandaft</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique nemo cumque dolorem sapiente fuga.</p>
+                            <p class="date">January 24, 2020 at 15 hours ago</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="commentForm">
+                <h2>Leave a Comment</h2>
+                <form>
+                    <fieldset>
+                        <label class="sr-only" for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+                        <label class="sr-only" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="youremail@domain.com" required>
+
+                        <label class="sr-only" for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject (Optional">
+                    </fieldset>
+
+                    <label class="sr-only" for="message">Message</label>
+                    <input type="text" name="message" id="message" placeholder="Here goes your message:" required>
+
+                    <input type="submit" placeholder="Send Message">
+                </form>
+            </section>
         </article>
-
-        <section>
-            <h2>Related Posts</h2>
-            <ul class="posts">
-                <li>
-                    <img src="sunshine-assets/blog-3.jpeg" alt="A plane parked on water close to the beach">
-                    <div class="copy">
-                        <p class="date">Dec 31, 2019</p>
-                        <p class="title">Five Reasons to stay at a beautiful Sunshine Hotel</p>
-                        <p class="continue">Continue</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="sunshine-assets/blog-4.jpeg" alt="A woman floating on top of water">
-                    <div class="copy">
-                        <p class="date">Dec 31, 2019</p>
-                        <p class="title">Experience romantic space just have only at Sunshine Hotel</p>
-                        <p class="continue">Continue</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="sunshine-assets/blog-5.jpeg" alt="Hotel building close-up">
-                    <div class="copy">
-                        <p class="date">Dec 31, 2019</p>
-                        <p class="title">Discover activites interested in Sunshine Hotel</p>
-                        <p class="continue">Continue</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>O2 Comments</h2>
-            <ul class="comments">
-                <li>
-                    <img class="commentPic" src="sunshine-assets/blog-6.jpeg" alt="Commenter photo">
-                    <div class="copy commentBox">
-                        <p class="name">Daniel Vandaft</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique nemo cumque dolorem sapiente fuga.</p>
-                        <p class="date">January 24, 2020 at 15 hours ago</p>
-                    </div>
-                </li>
-                <li>
-                    <img class="commentPic" src="sunshine-assets/blog-7.jpeg" alt="Commenter photo">
-                    <div class="copy commentBox">
-                        <p class="name">Daniel Vandaft</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique nemo cumque dolorem sapiente fuga.</p>
-                        <p class="date">January 24, 2020 at 15 hours ago</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-            <h2>Leave a Comment</h2>
-            <form>
-                <fieldset>
-                    <label class="sr-only" for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
-
-                    <label class="sr-only" for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="youremail@domain.com" required>
-
-                    <label class="sr-only" for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" placeholder="Subject (Optional">
-                </fieldset>
-
-                <label class="sr-only" for="message">Message</label>
-                <input type="text" name="message" id="message" placeholder="Here goes your message:" required>
-
-                <input type="submit" placeholder="Send Message">
-            </form>
-        <section>
-
-        </section>
     </main>
 
     <footer>

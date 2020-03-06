@@ -1,0 +1,113 @@
+    
+// Blog Page Styling
+
+.blogPage {
+    background-color: $backgroundColor;
+
+    header {
+        @include headerStyle('../sunshine-assets/blog-1.jpeg');
+    }
+
+    article {
+        background-color: $backgroundColor2;
+        position: relative;
+        top: -100px;
+        padding: 50px 50px;
+
+        .post {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .postInfo {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid;
+        }
+
+        .authorInfo {
+            width: 30%;
+            text-align: left;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .articleInfo {
+            width: 70%;
+            text-align: left;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .authorInfo li {            
+            margin-right: 25px;
+        }
+
+        .articleInfo li {            
+            margin-right: 35px;
+        }
+
+        .copy {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .copy p:first-child {
+            font-weight: 600;
+        }
+
+        .share {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .share li {
+            margin-right: 10px;
+        }
+
+        .related {
+            margin-bottom: 20px;
+        }
+
+        .related li {
+            width: calc(100% / 3 - 10px);
+            border-bottom: 1px solid;
+        }
+
+        .related .copy {
+            padding: 5px 10px;
+        }
+
+        .comments {
+            flex-direction: column;
+        }
+
+        .commentBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .commentBox img {
+            width: 50px;
+        }
+
+        .commentBox .copy {
+            width: 90%;
+            background-color: $backgroundColor;
+            margin: 0;
+                        padding: 5px 15px;
+        }
+    }
+}
+
+
+    
