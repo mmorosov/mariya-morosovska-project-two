@@ -6,4 +6,8 @@
         @include headerStyle('../sunshine-assets/contact-1.jpeg');
         height: 70vh;
     }
+
+    form {
+        @include formStyle;
+    }
 }

@@ -3,6 +3,7 @@
 
 .blogPage {
     background-color: $backgroundColor;
+    @include formStyle;
 
     header {
         @include headerStyle('../sunshine-assets/blog-1.jpeg');

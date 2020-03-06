@@ -14,7 +14,7 @@ footer {
         border-bottom: 1px solid;
     }
 
-    ul, form {
+    ul {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -23,6 +23,13 @@ footer {
 
     form {
         width: 40%;
+        @include formStyle;
+
+        input.emailSignup {
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+        }
     }
 
     .lowBar {
