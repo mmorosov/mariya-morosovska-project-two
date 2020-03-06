@@ -1,0 +1,44 @@
+
+// Footer Styling
+
+footer {
+    background-color: #1f1f1f;
+    color: $backgroundColor;
+    padding: 75px 0 0 0;    
+
+    .footerMenu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+        border-bottom: 1px solid;
+    }
+
+    ul, form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: calc(60%/2 - 10px);
+    }
+
+    form {
+        width: 40%;
+    }
+
+    .lowBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 25px 0;
+
+        ul {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        li {
+            padding-left: 20px;
+        }
+    }
+}

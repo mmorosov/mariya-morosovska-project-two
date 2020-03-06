@@ -4,6 +4,6 @@
 .contactPage {
     header {
         @include headerStyle('../sunshine-assets/contact-1.jpeg');
-        min-height: 90vh;
+        height: 70vh;
     }
 }

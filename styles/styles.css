@@ -286,7 +286,7 @@ h2 {
 }
 
 .topBar ul li {
-  height: 55px;
+  height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +306,7 @@ h2 {
 
 .topBar .logo {
   position: absolute;
-  top: 12px;
+  top: 22px;
   right: 50%;
 }
 
@@ -314,7 +314,7 @@ h2 {
   background-image: url("../sunshine-assets/home-1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 90vh;
 }
 
 .homePage .about {
@@ -503,7 +503,7 @@ h2 {
   background-image: url("../sunshine-assets/blog-1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 90vh;
 }
 
 .blogPage article {
@@ -647,6 +647,71 @@ h2 {
   background-image: url("../sunshine-assets/contact-1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  min-height: 90vh;
+  height: 90vh;
+  height: 70vh;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #EDEDED;
+  padding: 75px 0 0 0;
+}
+
+footer .footerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 40px;
+  border-bottom: 1px solid;
+}
+
+footer ul, footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: calc(60%/2 - 10px);
+}
+
+footer form {
+  width: 40%;
+}
+
+footer .lowBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 25px 0;
+}
+
+footer .lowBar ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .lowBar li {
+  padding-left: 20px;
 }
