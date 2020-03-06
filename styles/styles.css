@@ -675,6 +675,41 @@ h2 {
   height: 70vh;
 }
 
+.contactPage section {
+  background-color: #FFFFFF;
+  padding: 50px 0;
+}
+
+.contactPage section .copy {
+  width: 300px;
+}
+
+.contactPage section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactPage section li {
+  width: 33%;
+  padding: 20px;
+  border-right: 1px solid;
+}
+
+.contactPage section li:last-child {
+  border-right: none;
+}
+
+.contactPage section:nth-of-type(2) {
+  padding-top: 0;
+}
+
 .contactPage form fieldset {
   border: none;
   padding: 0;
