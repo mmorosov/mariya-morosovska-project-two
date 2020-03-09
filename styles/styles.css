@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -235,8 +236,21 @@ html {
   overflow: hidden;
 }
 
+* {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0.03rem;
+  color: #999999;
 }
 
 img {
@@ -266,55 +280,331 @@ a {
   margin: 0 auto;
 }
 
-h2 {
-  margin-top: 0;
-}
-
-.topBar {
-  width: 100%;
-  background-color: #FFFFFF;
+nav li {
   position: relative;
 }
 
-.topBar ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-transform: uppercase;
+nav li a {
+  font-weight: 600;
+  color: #000000;
 }
 
-.topBar ul li {
-  height: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10px;
+nav li a:hover, nav li a:focus, nav li a:active {
+  color: #999999;
 }
 
-.topBar ul li:nth-child(3) {
-  margin-right: 25%;
-}
-
-.topBar ul li:nth-child(4) {
-  margin-left: 25%;
-}
-
-.topBar .logo {
+nav li p {
+  background-color: #A4F1DC;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 0.6rem;
+  color: #000000;
   position: absolute;
-  top: 22px;
-  right: 50%;
+  bottom: 16px;
+  right: 5px;
+}
+
+h2, h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+span {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.homePage h2 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.logo, .homePage h3 {
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.04rem;
+}
+
+.homePage .about h3 {
+  font-size: 2.5rem;
+  padding-top: 20px;
+  position: relative;
+}
+
+.homePage .about h3::before {
+  content: " ";
+  background-color: #000000;
+  width: 50px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+}
+
+.byline .author {
+  font-weight: 600;
+  color: #000000;
+}
+
+.byline .author::after {
+  content: " — ";
+  color: #999999;
+}
+
+.homePage h4, .homePage i {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.homePage i {
+  font-size: 2rem;
+}
+
+.homePage .testimonialBox .quote {
+  padding: 20px 50px;
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.homePage .testimonialBox .quote::before {
+  content: " “ ";
+}
+
+.homePage .testimonialBox .quote::after {
+  content: " ” ";
+}
+
+.homePage .testimonialBox i:hover, .homePage .testimonialBox i:focus, .homePage .testimonialBox i:active {
+  color: #999999;
+}
+
+.homePage .testimonialBox .rating i {
+  color: #F6AB09;
+  font-weight: 300;
+}
+
+.homePage .contactUs h4,
+.homePage .contactUs .phone {
+  padding-top: 50px;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-transform: none;
+  color: #000000;
+}
+
+.homePage .contactUs h4 span,
+.homePage .contactUs .phone span {
+  color: #CCCCCC;
+  font-size: 2rem;
+}
+
+.homePage .contactUs .phone {
+  padding-top: 0;
+  margin: 0;
+}
+
+.homePage .contactUs p {
+  width: 250px;
+}
+
+.homePage .contactUs p:nth-of-type(3) {
+  padding-top: 50px;
+}
+
+footer, footer a {
+  color: #CCCCCC;
+}
+
+footer:hover, footer:focus, footer:active, footer a:hover, footer a:focus, footer a:active {
+  color: #FFFFFF;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li a {
+  font-weight: 600;
+  color: #000000;
+}
+
+nav li a:hover, nav li a:focus, nav li a:active {
+  color: #999999;
+}
+
+nav li p {
+  background-color: #A4F1DC;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 0.6rem;
+  color: #000000;
+  position: absolute;
+  bottom: 16px;
+  right: 5px;
+}
+
+h2, h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+span {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.homePage h2 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.logo, .homePage h3 {
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.04rem;
+}
+
+.homePage .about h3 {
+  font-size: 2.5rem;
+  padding-top: 20px;
+  position: relative;
+}
+
+.homePage .about h3::before {
+  content: " ";
+  background-color: #000000;
+  width: 50px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+}
+
+.byline .author {
+  font-weight: 600;
+  color: #000000;
+}
+
+.byline .author::after {
+  content: " — ";
+  color: #999999;
+}
+
+.homePage h4, .homePage i {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.homePage i {
+  font-size: 2rem;
+}
+
+.homePage .testimonialBox .quote {
+  padding: 20px 50px;
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.homePage .testimonialBox .quote::before {
+  content: " “ ";
+}
+
+.homePage .testimonialBox .quote::after {
+  content: " ” ";
+}
+
+.homePage .testimonialBox i:hover, .homePage .testimonialBox i:focus, .homePage .testimonialBox i:active {
+  color: #999999;
+}
+
+.homePage .testimonialBox .rating i {
+  color: #F6AB09;
+  font-weight: 300;
+}
+
+.homePage .contactUs h4,
+.homePage .contactUs .phone {
+  padding-top: 50px;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-transform: none;
+  color: #000000;
+}
+
+.homePage .contactUs h4 span,
+.homePage .contactUs .phone span {
+  color: #CCCCCC;
+  font-size: 2rem;
+}
+
+.homePage .contactUs .phone {
+  padding-top: 0;
+  margin: 0;
+}
+
+.homePage .contactUs p {
+  width: 250px;
+}
+
+.homePage .contactUs p:nth-of-type(3) {
+  padding-top: 50px;
+}
+
+footer, footer a {
+  color: #CCCCCC;
+}
+
+footer:hover, footer:focus, footer:active, footer a:hover, footer a:focus, footer a:active {
+  color: #FFFFFF;
 }
 
 .homePage header {
   background-image: url("../sunshine-assets/home-1.jpeg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
+}
+
+.homePage .byline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .homePage .about {
@@ -369,40 +659,46 @@ h2 {
   position: absolute;
   width: 125px;
   left: 0;
-  bottom: 0;
+  bottom: -25px;
 }
 
 .homePage .about .copy {
+  width: 400px;
+  padding: 0 25px;
+}
+
+.homePage .about .copy h3 {
   width: 300px;
-  padding-bottom: 20%;
 }
 
 .homePage .features {
+  background-image: url("../sunshine-assets/home-3.jpeg");
+  background-size: contain;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+}
+
+.homePage .featuresTable {
   background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.homePage .featuresTable {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
   margin-left: 15%;
-  padding: 10% 5% 10% 0;
+  padding-top: 5%;
+  width: 500px;
 }
 
 .homePage .featuresTable li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 50%;
+  width: 50%;
   padding: 0 20px 20px 0;
 }
 
@@ -415,7 +711,8 @@ h2 {
 }
 
 .homePage .testimonials {
-  background-color: #EDEDED;
+  background-image: url("../sunshine-assets/pattern.png");
+  background-size: cover;
   text-align: center;
   padding: 75px 0;
 }
@@ -449,16 +746,14 @@ h2 {
 }
 
 .homePage .testimonials .byline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .homePage .gallery {
-  background-color: #EDEDED;
+  background-image: url("../sunshine-assets/pattern.png");
+  background-size: cover;
   padding-bottom: 75px;
   text-align: center;
 }
@@ -472,6 +767,7 @@ h2 {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 30px;
 }
 
 .homePage .gallery li {
@@ -480,26 +776,29 @@ h2 {
 }
 
 .homePage .contactUs {
-  background-color: #FFFFFF;
+  background-image: url("../sunshine-assets/home-10.jpeg");
+  background-size: 60%;
+  background-position: fixed;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .homePage .contactUs .copy {
-  width: 40%;
   margin-right: 15%;
-  padding: 10% 0 10% 5%;
+  padding: 5% 0 5% 5%;
+  background-color: #FFFFFF;
 }
 
 .blogPage {
   background-color: #EDEDED;
 }
 
-.blogPage fieldset {
+.blogPage .form, .blogPage fieldset {
   border: none;
   padding: 0;
   display: -webkit-box;
@@ -513,9 +812,29 @@ h2 {
 .blogPage input, .blogPage textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #CCCCCC;
   width: 30%;
   padding: 10px 0;
+}
+
+.blogPage input::-webkit-input-placeholder, .blogPage textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.blogPage input:-ms-input-placeholder, .blogPage textarea:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.blogPage input::-ms-input-placeholder, .blogPage textarea::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.blogPage input::placeholder, .blogPage textarea::placeholder {
+  color: #FFFFFF;
+}
+
+.blogPage label {
+  color: #CCCCCC;
 }
 
 .blogPage textarea {
@@ -526,6 +845,7 @@ h2 {
 .blogPage header {
   background-image: url("../sunshine-assets/blog-1.jpeg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
 }
@@ -670,6 +990,7 @@ h2 {
 .contactPage header {
   background-image: url("../sunshine-assets/contact-1.jpeg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
   height: 70vh;
@@ -710,7 +1031,7 @@ h2 {
   padding-top: 0;
 }
 
-.contactPage form fieldset {
+.contactPage form .form, .contactPage form fieldset {
   border: none;
   padding: 0;
   display: -webkit-box;
@@ -724,14 +1045,80 @@ h2 {
 .contactPage form input, .contactPage form textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #CCCCCC;
   width: 30%;
   padding: 10px 0;
+}
+
+.contactPage form input::-webkit-input-placeholder, .contactPage form textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.contactPage form input:-ms-input-placeholder, .contactPage form textarea:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.contactPage form input::-ms-input-placeholder, .contactPage form textarea::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.contactPage form input::placeholder, .contactPage form textarea::placeholder {
+  color: #FFFFFF;
+}
+
+.contactPage form label {
+  color: #CCCCCC;
 }
 
 .contactPage form textarea {
   width: 100%;
   height: 100px;
+}
+
+.topBar {
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  height: 75px;
+}
+
+.topBar ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.topBar ul li {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.topBar ul li:nth-child(3) {
+  margin-right: 25%;
+}
+
+.topBar ul li:nth-child(4) {
+  margin-left: 25%;
+}
+
+.topBar .logo {
+  position: absolute;
+  top: 20px;
+  left: 42%;
+  margin: 0;
+}
+
+.topBar label, .topBar input {
+  display: none;
 }
 
 footer {
@@ -749,8 +1136,8 @@ footer .footerMenu {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-bottom: 1px solid #CCCCCC;
   padding-bottom: 40px;
-  border-bottom: 1px solid;
 }
 
 footer ul {
@@ -771,7 +1158,7 @@ footer form {
   width: 40%;
 }
 
-footer form fieldset {
+footer form .form, footer form fieldset {
   border: none;
   padding: 0;
   display: -webkit-box;
@@ -785,9 +1172,29 @@ footer form fieldset {
 footer form input, footer form textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #CCCCCC;
   width: 30%;
   padding: 10px 0;
+}
+
+footer form input::-webkit-input-placeholder, footer form textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+footer form input:-ms-input-placeholder, footer form textarea:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+footer form input::-ms-input-placeholder, footer form textarea::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+footer form input::placeholder, footer form textarea::placeholder {
+  color: #FFFFFF;
+}
+
+footer form label {
+  color: #CCCCCC;
 }
 
 footer form textarea {
@@ -796,7 +1203,7 @@ footer form textarea {
 }
 
 footer form input.emailSignup {
-  color: white;
+  color: #FFFFFF;
   padding: 10px 0;
   width: 100%;
 }
@@ -813,6 +1220,7 @@ footer .lowBar {
           align-items: center;
   width: 100%;
   padding: 25px 0;
+  color: #999999;
 }
 
 footer .lowBar ul {
@@ -827,4 +1235,199 @@ footer .lowBar ul {
 
 footer .lowBar li {
   padding-left: 20px;
+}
+
+footer .lowBar i {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  padding: 0 25px;
+}
+
+footer .lowBar i:hover, footer .lowBar i:focus, footer .lowBar i:active {
+  color: #CCCCCC;
+}
+
+@media (max-width: 1100px) {
+  .featuresTable {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1015px) {
+  .featuresTable {
+    font-size: 0.8rem;
+  }
+  .homePage .about .copy {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20px;
+  }
+  .homePage .about h3::before {
+    right: 120px;
+  }
+  .homePage .contactUs {
+    background-size: 70%;
+  }
+}
+
+@media (max-width: 860px) {
+  .topBar ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .topBar ul li:nth-child(3) {
+    margin-right: 0;
+  }
+  .topBar ul li:nth-child(4) {
+    margin-left: 0;
+  }
+  .topBar .logo {
+    left: 15%;
+    font-size: 3rem;
+  }
+  .homePage .featuresTable {
+    width: 400px;
+  }
+  .homePage .featuresTable li {
+    width: 100%;
+  }
+  .homePage .gallery li {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .topBar .logo {
+    font-size: 2.5rem;
+  }
+  .homePage .contactUs {
+    background-size: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo, .homePage h3 {
+    font-size: 2.5rem;
+  }
+  .topBar {
+    position: fixed;
+    z-index: 1;
+  }
+  .topBar nav label,
+  .topBar nav input {
+    display: block;
+    font-size: 2rem;
+  }
+  .topBar ul.menu {
+    background-color: #FFFFFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    right: -100%;
+    top: 75px;
+  }
+  .topBar ul.menu a {
+    display: inline-block;
+    font-size: 1.75rem;
+    text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    width: 100%;
+    padding: 10px;
+  }
+  .topBar input[type="checkbox"]:checked + ul.menu {
+    right: 0;
+    top: 75px;
+  }
+  .topBar input[type="checkbox"] {
+    display: none;
+  }
+  .topBar label[for="toggle"] {
+    position: fixed;
+    width: 100%;
+    top: 20px;
+    right: 15%;
+    text-align: right;
+    padding: 5px 0;
+  }
+  .topBar label[for="toggle"]:active,
+  .topBar label[for="toggle"]:focus {
+    color: #CCCCCC;
+  }
+  .homePage .features {
+    background-image: none;
+  }
+  .homePage .features .featuresTable {
+    width: 70%;
+    margin: 10% 15%;
+  }
+  .homePage .testimonialBox .wrapper {
+    width: 80%;
+  }
+  .homePage .testimonialBox .quote {
+    padding: 20px 0px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .homePage .gallery li {
+    width: 100%;
+    padding: 5% 10%;
+  }
+  .homePage .gallery li:nth-last-of-type(4),
+  .homePage .gallery li:nth-last-of-type(5),
+  .homePage .gallery li:nth-last-of-type(6) {
+    display: none;
+  }
+  .homePage .contactUs {
+    background-image: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homePage .contactUs .copy {
+    width: 100%;
+    margin: 10% 15%;
+    padding: 5%;
+    text-align: center;
+  }
+  .homePage .contactUs p {
+    width: 100%;
+  }
+  footer ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+  }
+  footer li {
+    padding: 10px;
+  }
+  footer form {
+    text-align: center;
+    width: 100%;
+  }
+  footer .footerMenu {
+    border-bottom: none;
+  }
+  footer .lowBar i {
+    padding: 0 5px;
+  }
 }

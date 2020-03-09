@@ -5,6 +5,7 @@
     width: 100%;
     background-color: $backgroundColor2;
     position: relative;
+    height: 75px;
 
     ul {
         align-items: center;
@@ -29,7 +30,12 @@
 
     .logo {
         position: absolute;
-        top: 22px;
-        right: 50%;
+        top: 20px;
+        left: 42%;
+        margin: 0;
+    }
+
+    label, input {
+        display: none;
     }
 }

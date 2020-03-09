@@ -16,7 +16,11 @@
     <header>
         <div class="topBar">
             <nav class="wrapper">
-                <ul>
+                <!-- Responsive menu -->
+                <label for="toggle"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle">
+                <!-- Responsive menu end -->
+                <ul class="menu">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -41,6 +45,7 @@
                     </li>
                 </ul>
             </nav>
+
             <p class="logo">Sunshine</p>
         </div>
         <h1 class="sr-only">Sunshine Home</h1>
@@ -56,7 +61,7 @@
                         <img src="sunshine-assets/home-circle-text.png" alt="Travel stamp overlayed on top of the previous image">
                     </div>
                     <div class="copy">
-                        <h3>A Great Place to Enjoy Your Life</h3>
+                        <h3>A great place to enjoy your life</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut commodi debitis minus, laudantium reiciendis velit repudiandae quis qui esse et quam animi illo inventore odit in necessitatibus facilis unde eius recusandae. Nulla, sed impedit nobis maxime officia voluptatum maiores sit nihil, fugit a consectetur magni reiciendis veniam, expedita esse!</p>
                         <div class="byline">
                             <p class="author">Ethan Hunt</p>
@@ -68,33 +73,32 @@
         </section>
 
         <section class="features">
-            <h2 class="sr-only">Features</h2>
             <ul class="featuresTable wrapper">
                 <li>
                     <i class="fas fa-sun"></i>
                     <div class="copy">
-                        <h3>Sunny Season</h3>
+                        <h4>Sunny Season</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit asperiores beatae hic, cupiditate voluptatibus nemo! Eos ex dignissimos officiis.</p>
                     </div>
                 </li>
                 <li>
                     <i class="fas fa-utensils"></i>
                     <div class="copy">
-                        <h3>Five Star Restaurants</h3>
+                        <h4>Five Star Restaurants</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit asperiores beatae hic, cupiditate voluptatibus nemo! Eos ex dignissimos officiis.</p>
                     </div>
                 </li>
                 <li>
                     <i class="fas fa-plane"></i>
                     <div class="copy">
-                        <h3>Flight Included</h3>
+                        <h4>Flight Included</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit asperiores beatae hic, cupiditate voluptatibus nemo! Eos ex dignissimos officiis.</p>
                     </div>
                 </li>
                 <li>
                     <i class="fas fa-glass-martini"></i>
                     <div class="copy">
-                        <h3>All Inclusive</h3>
+                        <h4>All Inclusive</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit
                             asperiores beatae hic, cupiditate voluptatibus nemo! Eos ex dignissimos officiis.</p>
                     </div>
@@ -102,7 +106,7 @@
                 <li>
                     <i class="fas fa-leaf"></i>
                     <div class="copy">
-                        <h3>Guided Nature Excursions</h3>
+                        <h4>Guided Nature Excursions</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit
                             asperiores beatae hic, cupiditate voluptatibus nemo! Eos ex dignissimos officiis.</p>
                     </div>
@@ -110,22 +114,19 @@
                 <li>
                     <i class="fas fa-bell"></i>
                     <div class="copy">
-                        <h3>Wake Up Service</h3>
+                        <h4>Wake Up Service</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam earum similique odio nobis, suscipit
                             asperiores beatae hic, cupiditate voluptatibus nemo! Eos ex dignissimos officiis.</p>
                     </div>
                 </li>
             </ul>
-            <div class="image">
-                <img src="sunshine-assets/home-3.jpeg" alt="A landscape showing mountains and the sea">
-            </div>
         </section>
 
         <section class="testimonials">
             <article class="testimonialBox wrapper">
                 <h2>Testimonials</h2>
                 <h3>What Clients Say</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate ipsam expedita facilis aliquam et quidem, excepturi, fugit totam nemo, illo beatae accusamus incidunt eius minima animi nostrum libero quos!</p>
+                <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate ipsam expedita facilis aliquam et quidem, excepturi, fugit totam nemo, illo beatae accusamus incidunt eius minima animi nostrum libero quos!</p>
 
                 <ul class="rating">
                     <li><i class="far fa-star"></i></li>
@@ -161,17 +162,14 @@
         </section>
 
         <section class="contactUs">
-            <div class="image">
-                <img src="sunshine-assets/home-10.jpeg" alt="A landscape an inlet surrounded by a beach">
-            </div>
             <div class="copy">
                 <h2>Information</h2>
                 <h3>Contact Us</h3>
                 <h4>Honolulu, <span>Hawaii</span></h4>
                 <p>123 King Street, 4th Floor, Utral House Building, Honolulu, Hawaii</p>
                 <p><span>Email:</span> info@sunshinehotel.com</p>
-                <p>Call directly:</p>
-                <p>+99 (0) 344 956 4050</p>
+                <p><strong>Call directly:</strong></p>
+                <p class="phone">+99 (0) 344 956 4050</p>
             </div>
         </section>
     </main>
