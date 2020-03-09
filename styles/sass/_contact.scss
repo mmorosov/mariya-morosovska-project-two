@@ -26,10 +26,19 @@
             width: 33%;
             padding: 20px;  
             border-right: 1px solid;
+
+            &:hover, &:focus, &:active {
+                box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
+            }
         }
 
         li:last-child {
             border-right: none;
+        }
+
+        i {
+            color: $primaryColor;
+            font-size: 1.5rem;
         }
     }
 

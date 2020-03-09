@@ -61,6 +61,37 @@
     .homePage .gallery li {
         width: calc(50% - 10px);
     }
+
+    .blogPage .articleInfo {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-right: 0;
+        
+        li {
+            display: flex;
+        }
+
+        li p {
+            padding: 0 20px;
+        }
+    }
+
+    .blogPage article .posts {
+        flex-wrap: wrap;
+        
+        li {
+        width: 100%;
+        display: flex;
+        padding: 25px 0;
+        }
+
+        img {
+            max-width: 50%;
+        }
+
+    }
 }
 
 @media (max-width: 768px) {
@@ -208,6 +239,44 @@
 
         .lowBar i{
             padding: 0 5px;
+        }
+    }
+
+    .blogPage article .posts {
+    
+        li {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 25px 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .commentBox {
+        flex-direction: column;
+    }
+
+    .commentBox img {
+        display: none;
+    }
+
+    .commentBox .copy {
+        width: 100%;
+    }
+
+    .contactPage {
+        main ul {
+            flex-direction: column;
+            
+            li {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid $spanColor;
+            }
         }
     }
 }

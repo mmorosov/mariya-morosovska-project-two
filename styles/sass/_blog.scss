@@ -35,6 +35,10 @@
             display: flex;
             justify-content: left;
             align-items: center;
+
+            img {
+                border-radius: 50%;
+            }
         }
 
         .articleInfo {
@@ -80,6 +84,10 @@
         .related li {
             width: calc(100% / 3 - 10px);
             border-bottom: 1px solid;
+
+            &:hover, &:focus, &:active {
+                box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
+            }
         }
 
         .related .copy {
